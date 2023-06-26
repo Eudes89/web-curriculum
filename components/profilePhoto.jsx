@@ -8,12 +8,13 @@ export default function ProfilePhoto ({children}) {
     
     const [classname, setClassName] = useState(false);
     const [click, setClick] = useState(false);
+    const [hiddenWrite, setHiddenWrite] = useState(true);
 
     function handleProfileClick(){
         
         setClassName(true);
         setClick(true);
-        
+        setHiddenWrite(false);
         setTimeout(() => {
             setClassName(false);
         }, 1000);
@@ -26,14 +27,15 @@ export default function ProfilePhoto ({children}) {
         <>
         
             <div id="profile-div" onClick={handleProfileClick}
-            className= {classname ? 'mt-2 animate-wobble': 
+            className= {classname ? 'mt-2 animate-flip': 
             'mt-2'}>
 
                 <Image
                  src={profilePhoto}
                  width={250}
                  alt="Foto de Perfil de Eudes Azevedo"
-                 className="border-4 rounded-full border-blue-400"
+                 className="border-4 rounded-full border-blue-400 hover:cursor-pointer
+                 hover:animate-headShake"
                 />
 
             </div>
@@ -42,7 +44,9 @@ export default function ProfilePhoto ({children}) {
                 children
             }
 
-            <Typewriter />
+            {hiddenWrite &&
+                <Typewriter />
+            }
             
         </>
     )
