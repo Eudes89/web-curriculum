@@ -27,8 +27,8 @@ export default function ProfilePhoto ({children}) {
         <>
         
             <div id="profile-div" onClick={handleProfileClick}
-            className= {classname ? 'mt-2 animate-flip': 
-            'mt-2'}>
+            className= {classname ? 'mt-2 animate-flip xl:mt-2': 
+            'mt-2 xl:mt-2'}>
 
                 <Image
                  src={profilePhoto}

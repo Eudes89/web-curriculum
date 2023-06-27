@@ -33,8 +33,8 @@ export default function AboutMe () {
         <>
         
             <div id="aboutMe" onClick={handleClick}
-            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-64' : 
-            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-64 bg-opacity-50 hover:bg-opacity-90"
+            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-64 md:w-64 sm:w-60 2xl:w-80 xl:w-80' : 
+            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-64 bg-opacity-50 hover:bg-opacity-90 md:w-64 sm:w-52 2xl:w-80 xl:w-80"
             }>
 
                 <h3 className='text-lg font-bold
@@ -58,8 +58,8 @@ export default function AboutMe () {
             {open && 
 
                 <div id='openInfo'
-                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6' :
-                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px]'}
+                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%]' :
+                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10'}
                 >
 
                     <Image 
@@ -67,11 +67,12 @@ export default function AboutMe () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2'
+                        className='mt-2 md:ml-36 lg:ml-52 2xl:ml-0 xl:ml-0'
                     />
 
                     <div id='info' className=' text-center mt-2 mx-1
-                    lg:ml-[18%] lg:mr-[35%] lg:mt-20'>
+                    lg:ml-[18%] lg:mr-[35%] lg:mt-20 md:ml-[18%] md:mr-[18%] md:mt-20
+                    2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4'>
                         <p className='text-white'>
                             
                             É um grande prazer compartilhar um pouco

@@ -36,8 +36,8 @@ export default function Contact () {
         <>
         
             <div id="contact" onClick={handleClick}
-            className= {classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center' : 
-            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center bg-opacity-50 hover:bg-opacity-90"
+            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-64 md:w-64 sm:w-60 2xl:w-80 xl:w-80' : 
+            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-64 bg-opacity-50 hover:bg-opacity-90 md:w-64 sm:w-52 2xl:w-80 xl:w-80"
             }>
 
                 <h3 className='text-lg font-bold
@@ -62,8 +62,8 @@ export default function Contact () {
             {open && 
 
                 <div id='openInfo'
-                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6' :
-                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6'}
+                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%]' :
+                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10'}
                 >
 
                     <Image 
@@ -71,7 +71,7 @@ export default function Contact () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2'
+                        className='mt-2 md:ml-36 lg:ml-52 2xl:ml-0 xl:ml-0'
                     />
 
                     <h3 className='font-bold text-xl bg-slate-900
@@ -80,7 +80,8 @@ export default function Contact () {
                     </h3>
 
                     <div id='whatsApp' className='flex flex-col text-center
-                    items-center bg-slate-700 w-full gap-y-2'>
+                    items-center bg-slate-700 w-full gap-y-2
+                    '>
                         
                         <h4 className='text-lg font-bold text-green-500
                         border-b-2 border-black w-full py-2 bg-black'>
