@@ -12,18 +12,13 @@ export default function Home() {
     <main className="flex flex-col items-center h-screen
     overscroll-x-none overflow-x-hidden">
       
-      <iframe 
-      src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-      width="3840" height="2160" seamless
-      title="earth-pc" className="fixed min-w-[600px] min-h-screen
-      w-auto h-auto -z-10
-      md:hidden lg:hidden xl:hidden"
-      autoplay loop muted>
-
-      </iframe>
-        
-     
       
+      <iframe src="https://player.vimeo.com/video/840283518?h=0be9a2311a" width="640" height="564"
+      seamless frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>  
+     
+      <iframe 
+      src="https://player.vimeo.com/video/840283461?h=f8c1667088" width="640" height="564" 
+      seamless frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       {/* <video 
         src="https://vimeo.com/840283518?share=copy"
         autoPlay loop muted
@@ -32,17 +27,7 @@ export default function Home() {
         md:hidden lg:hidden xl:hidden"
       /> */}
 
-      <iframe 
-      src="https://player.vimeo.com/video/840283518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-      width="1440" height="2160" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen title="sky-mobile" seamless className="hidden
-      2xl:flex xl:flex lg:flex md:flex
-      fixed min-w-[1840px] min-h-[960px] w-auto h-auto
-      -z-10 2xl:min-w-[3840px] 2xl:min-h-[2160]
-      3xl:min-w-[3840px] 3xl:min-h-[2160]
-      xl:min-w-[2240px] xl:min-h-[1600]">
       
-      </iframe>
 
       {/*  */}
       
