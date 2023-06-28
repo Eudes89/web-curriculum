@@ -15,7 +15,7 @@ export default function Home() {
       
       <div className="w-auto h-auto flex justify-center items-center" >
         <iframe src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-        frameborder="0" allow="autoplay; loop; muted"
+        frameborder="1" allow="autoplay; loop; muted"
         className="fixed -z-10 min-h-[2160px] min-w-[3840px]"
         title="earth-pc">
           </iframe>
