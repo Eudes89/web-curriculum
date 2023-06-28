@@ -73,30 +73,60 @@ export default function AboutMe () {
                     <div id='info' className=' text-center mt-2 mx-1
                     lg:ml-[18%] lg:mr-[35%] lg:mt-20 md:ml-[18%] md:mr-[18%] md:mt-20
                     2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4'>
-                        <p className='text-white'>
+                        <p className='text-white mb-4'>
                             
-                            É um grande prazer compartilhar um pouco
-                            da minha história com você. <br/>
-                            Eu nasci na cidade de Guararema - SP e me mudei
-                            para Mogi das Cruzes - SP quando tinha 9 anos. <br/>
-                            Comecei a trabalhar com 15 anos como
-                            empacotador de supermercado, depois ajudei meu pai
-                            com blindagens automotivas, entrei para uma loja 
-                            de troca de óleo, onde fiquei por 4 anos. <br/>
-                            Depois abri uma oficina de funilaria e pintura de carros,
-                            onde fiquei 5 anos. Fechei a oficina e abri um bar no centro
-                            da cidade, onde fiquei por mais 5 anos. <br/>
-                            Comecei a estudar Programação no final do ano de 2019,
-                            e foi quando encontrei algo que tinha paixão em fazer.<br/>
-                            Eu sempre amei tudo relacionado a tecnologia, computadores e
-                            video games.<br/> Quando começo algo eu vou até o final, mesmo
-                            que dê muito trabalho. Meus amigos sempre me dizem: <br/>  
-                            <i className=' text-yellow-400'> Quando o Eudes pega um problema, <br/> ele não solta o osso até resolver...</i>
-                            <br/>Eu aprendi o que sei até hoje de forma autodidata.
-                            Procurando conteúdo e buscando soluções para aplicações da realidade,
-                            onde conto um pouco mais na seção projetos.
-
-                            
+                            É um imenso prazer compartilhar um pouco da minha história com você. 😁
+                            <br/>
+                            <br/>
+                            Nasci na cidade de Guararema, em São Paulo, e aos 9 anos de idade
+                            mudei-me para Mogi das Cruzes, também em São Paulo. Foi nessa época
+                            que tive meu primeiro contato com um computador.
+                            Era uma máquina que possuía apenas um prompt de comando, exigindo 
+                            que eu entendesse um pouco de códigos do terminal para abrir qualquer
+                            aplicativo. Por sorte, veio acompanhada de um manual que ensinava
+                            vários comandos.
+                            <br/>
+                            <br/>
+                            Desde então, apaixonei-me pela área da computação. Infelizmente, 
+                            devido às dificuldades financeiras de minha família, precisei começar
+                            a trabalhar cedo, o que me afastou gradativamente da tecnologia. &#9785;
+                            <br/>
+                            <br/>
+                            Trabalhei como empacotador de supermercado e posteriormente na área
+                            de blindagem automotiva junto ao meu pai. Em seguida, ingressei em
+                            uma loja de troca de óleo e mais tarde decidi abrir minha própria
+                            oficina de funilaria e pintura de carros. Entretanto, acabei encerrando
+                            esse empreendimento para abrir um bar no centro da cidade,
+                            até que, posteriormente, decidi deixar o bar sob a administração de meu pai.
+                            <br/>
+                            <br/>
+                            Foi somente no final de 2019 que retomei meus estudos em programação e
+                            me reconectei com o mundo da tecnologia, despertando minha verdadeira paixão.
+                            Sempre fui fascinado por tudo relacionado à tecnologia, computadores e
+                            videogames, e a possibilidade de desenvolver programas e vê-los sendo
+                            utilizados pelas pessoas é algo realmente fantástico. 💻
+                            <br/>
+                            <br/>
+                            Quando me comprometo com algo, vou até o fim, mesmo que exija muito esforço.
+                            Meus amigos costumam dizer:<br/>
+                            <i className=' text-yellow-500'>&#10075; Quando o Eudes pega um problema, ele não desiste
+                            até resolvê-lo! &#10076;</i> 
+                            <br/>
+                            <br/>
+                            Tudo o que aprendi até hoje foi de forma autodidata, buscando
+                            conteúdo e soluções para criar aplicações web e mobile reais, o que relato 
+                            um pouco mais na seção de projetos.
+                            <br/>
+                            <br/>
+                            Continuo estudando diariamente, explorando novas APIs e frameworks.
+                            Acompanho de perto o site RoadMap, que serve como base para meus estudos.
+                            Meu objetivo é continuar evoluindo para poder contribuir da melhor forma
+                            possível com meu futuro empregador.
+                            <br/>
+                            <br/>
+                            Não almejo ser o melhor, mas sim ser habilidoso no que faço e 
+                            alcançar plena satisfação em meus trabalhos e conhecimentos.
+                            Este é o meu sonho.
                         
                         </p>
                     </div>
