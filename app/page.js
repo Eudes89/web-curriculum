@@ -25,7 +25,7 @@ export default function Home() {
      
       
       <video 
-        src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        src="https://vimeo.com/840283518?share=copy"
         autoPlay loop muted
         className="fixed min-w-[600px] min-h-screen
         w-auto h-auto -z-10
@@ -45,7 +45,7 @@ export default function Home() {
       </iframe> */}
 
       <video
-        src="https://player.vimeo.com/video/840283518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        src="https://vimeo.com/840283461?share=copy"
         autoPlay loop muted
         className="hidden
         2xl:flex xl:flex lg:flex md:flex
