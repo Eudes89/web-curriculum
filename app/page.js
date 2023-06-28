@@ -13,10 +13,10 @@ export default function Home() {
     overscroll-x-none overflow-x-hidden">
       
       
-      <div className="absolute w-auto h-auto" >
+      <div className="absolute -z-10 w-auto h-auto" >
         <iframe src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         frameborder="0" allow="autoplay; loop; muted"
-        className="fixed -z-10 min-h-screen min-w-screen"
+        className="fixed -z-10 min-h-[2160px] min-w-[3840px]"
         title="earth-pc">
           </iframe>
       </div>
