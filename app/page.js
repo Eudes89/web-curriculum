@@ -14,11 +14,17 @@ export default function Home() {
       
       
       <div className="w-auto h-auto flex justify-center items-center" >
-        <iframe src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-        frameborder="1" allow="autoplay; loop; muted"
-        className="fixed -z-10 min-h-[2160px] min-w-[3840px]"
-        title="earth-pc">
-          </iframe>
+      <iframe width="3840" height="2160" src="https://www.youtube.com/embed/FTMHpSgLMa0?controls=0" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen autoplay='1'
+      className="2xl:min-w-[3840px] 2xl:min-h-[2160px]
+      xl:min-w-[1980px] xl:min-h-[1080px]
+      lg:min-w-[1260px] lg:min-h-[720px]
+      md:min-w-[980px] md:min-h-[600px]">
+
+      </iframe>
+          
       </div>
       
       {/* <video 
