@@ -2,7 +2,7 @@
 import ProfilePhoto from "@/components/profilePhoto";
 // import bgMobile from '../public/videos/sky-mobile.mp4';
 import Menu from "@/components/menu";
-import bgPc from '../public/videos/earth-pc.mp4';
+// import bgPc from '../public/videos/earth-pc.mp4';
 
 
 export default function Home() {
@@ -17,7 +17,8 @@ export default function Home() {
       width="3840" height="2160" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
       allowfullscreen title="earth-pc" className="fixed min-w-[600px] min-h-screen
       w-auto h-auto -z-10
-      md:hidden lg:hidden xl:hidden">
+      md:hidden lg:hidden xl:hidden"
+      autoplay loop muted>
 
       </iframe>
         
