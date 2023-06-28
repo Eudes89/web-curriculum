@@ -14,8 +14,8 @@ export default function Home() {
       
       <iframe 
       src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-      width="3840" height="2160" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
-      allowfullscreen title="earth-pc" className="fixed min-w-[600px] min-h-screen
+      width="3840" height="2160" 
+      title="earth-pc" className="fixed min-w-[600px] min-h-screen
       w-auto h-auto -z-10
       md:hidden lg:hidden xl:hidden"
       autoplay loop muted>
