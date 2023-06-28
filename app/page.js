@@ -12,7 +12,7 @@ export default function Home() {
     <main className="flex flex-col items-center h-screen
     overscroll-x-none overflow-x-hidden">
       
-      <iframe 
+      {/* <iframe 
       src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
       width="3840" height="2160" 
       title="earth-pc" className="fixed min-w-[600px] min-h-screen
@@ -20,19 +20,19 @@ export default function Home() {
       md:hidden lg:hidden xl:hidden"
       autoplay loop muted>
 
-      </iframe>
+      </iframe> */}
         
      
       
-      {/* <video 
-        src={bgMobile}
+      <video 
+        src="https://player.vimeo.com/video/840283461?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         autoPlay loop muted
         className="fixed min-w-[600px] min-h-screen
         w-auto h-auto -z-10
         md:hidden lg:hidden xl:hidden"
-      /> */}
+      />
 
-      <iframe 
+      {/* <iframe 
       src="https://player.vimeo.com/video/840283518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
       width="1440" height="2160" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen title="sky-mobile" className="hidden
@@ -42,10 +42,10 @@ export default function Home() {
       3xl:min-w-[3840px] 3xl:min-h-[2160]
       xl:min-w-[2240px] xl:min-h-[1600]">
       
-      </iframe>
+      </iframe> */}
 
-      {/* <video
-        src={bgPc}
+      <video
+        src="https://player.vimeo.com/video/840283518?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         autoPlay loop muted
         className="hidden
         2xl:flex xl:flex lg:flex md:flex
@@ -54,7 +54,7 @@ export default function Home() {
         3xl:min-w-[3840px] 3xl:min-h-[2160]
         xl:min-w-[2240px] xl:min-h-[1600]"
       
-      /> */}
+      />
       
       <ProfilePhoto>
 
