@@ -16,8 +16,8 @@ export default function Home() {
       <div className="w-auto h-auto flex justify-center items-center" >
       <iframe width="3840" height="2160" src="https://www.youtube.com/embed/FTMHpSgLMa0?autoplay=1&controls=0&loop=1&modestbranding=1" 
       title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen autoplay='1'
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop" 
+      allowfullscreen
       className="fixed 2xl:min-w-[3840px] 2xl:min-h-[2160px]
       xl:min-w-[1980px] xl:min-h-[1080px]
       lg:min-w-[1260px] lg:min-h-[720px]
