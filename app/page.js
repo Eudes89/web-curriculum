@@ -10,7 +10,7 @@ export default function Home() {
   return (
     
     <main className="flex flex-col items-center h-screen
-    overscroll-x-none overflow-x-hidden">
+    overscroll-x-none overflow-x-hidden bg-gradient-to-b from-black via-blue-600 to-purple-600 ">
 
       <Image 
       
