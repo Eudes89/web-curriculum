@@ -33,8 +33,8 @@ export default function Projects () {
         <>
         
             <div id="projects" onClick={handleClick}
-            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-64 md:w-64 sm:w-60 2xl:w-80 xl:w-80' : 
-            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-64 bg-opacity-50 hover:bg-opacity-90 md:w-64 sm:w-52 2xl:w-80 xl:w-80"
+            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-auto md:w-auto sm:w-auto 2xl:w-auto xl:w-auto' : 
+            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-auto bg-opacity-50 hover:bg-opacity-90 md:w-auto sm:w-auto 2xl:w-auto xl:w-auto"
             }>
 
                 <h3 className='text-lg font-bold
