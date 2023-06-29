@@ -20,7 +20,7 @@ export default function Menu (){
             border border-white p-1 gap-2 mt-2 rounded-lg
              animate-flip ring-2 ring-blue-400 bg-blue-800
              bg-opacity-50 py-2
-             lg:w-auto">
+             lg:w-[500px]">
 
                 <AboutMe />
                 <Knowledge />
