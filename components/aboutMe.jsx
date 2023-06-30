@@ -33,8 +33,10 @@ export default function AboutMe () {
         <>
         
             <div id="aboutMe" onClick={handleClick}
-            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-auto md:w-auto sm:w-auto 2xl:w-auto xl:w-auto' : 
-            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-40 bg-opacity-50 hover:bg-opacity-90 md:w-auto sm:w-auto 2xl:w-auto xl:w-auto"
+            className={classN ? 
+            'w-auto h-auto animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-auto md:w-auto sm:w-auto 2xl:w-auto xl:w-auto'
+            : 
+            "w-auto h-auto flex hover:cursor-pointer hover:ring-2 hover:ring-sky-400 hover:animate-jello flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-40 bg-opacity-50 hover:bg-opacity-90 md:w-auto sm:w-auto 2xl:w-auto xl:w-auto"
             }>
 
                 <h3 className='text-lg font-bold
@@ -47,6 +49,7 @@ export default function AboutMe () {
                     src={iconAbout}
                     alt='icone sobre mim'
                     width={70}
+                    className='w-[50px]'
                 />
 
                 <p className='font-bold'>
@@ -58,8 +61,11 @@ export default function AboutMe () {
             {open && 
 
                 <div id='openInfo'
-                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10' :
-                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10'}
+                className={closeButton ? 
+                    'animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 2xl:flex 2xl:flex-col 2xl:w-auto 2xl:-left-40 2xl:-right-40 2xl:h-auto 2xl:-top-[480px] xl:flex xl:flex-col xl:w-auto xl:-left-40 xl:-right-40 xl:h-auto xl:-top-70 lg:flex lg:flex-col lg:w-auto lg:-left-40 lg:-right-40 lg:h-auto lg:-top-70 md:flex md:flex-col md:w-auto md:-left-40 md:-right-40 md:h-auto md:-top-70 ' 
+                    :
+                     'animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 2xl:flex 2xl:flex-col 2xl:w-auto 2xl:-left-40 2xl:-right-40 2xl:h-auto 2xl:-top-[480px] xl:flex xl:flex-col xl:w-auto xl:-left-40 xl:-right-40 xl:h-auto xl:-top-70 lg:flex lg:flex-col lg:w-auto lg:-left-40 lg:-right-40 lg:h-auto lg:-top-70 '
+                    }
                 >
 
                     <Image 
@@ -72,7 +78,7 @@ export default function AboutMe () {
 
                     <div id='info' className=' text-center mt-2 mx-1
                     lg:ml-[18%] lg:mr-[35%] lg:mt-20 md:ml-[18%] md:mr-[18%] md:mt-20
-                    2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4'>
+                    2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4 xl:mt-4'>
                         <p className='text-white mb-4'>
                             
                             É um imenso prazer compartilhar um pouco da minha história com você. 😁

@@ -27,15 +27,18 @@ export default function ProfilePhoto ({children}) {
         <>
         
             <div id="profile-div" onClick={handleProfileClick}
-            className= {classname ? 'mt-2 animate-flip xl:mt-2': 
-            'mt-2 xl:mt-2'}>
+            className= {classname ? 
+            'mt-16 animate-flip 2xl:mt-36 xl:mt-2 lg:mt-2 md:mt-2 sm:mt-2'
+            : 
+            'mt-16 2xl:mt-36 xl:mt-2 lg:mt-8 md:mt-4 sm:mt-1'}>
 
                 <Image
                  src={profilePhoto}
                  width={250}
                  alt="Foto de Perfil de Eudes Azevedo"
-                 className="border-4 rounded-full border-blue-400 hover:cursor-pointer
-                 hover:animate-headShake"
+                 className="border-2 rounded-full border-purple-900 hover:cursor-pointer
+                 hover:animate-headShake w-[200px] shadow-xl shadow-purple-900
+                 2xl:w-[300px] xl:w-[200px] lg:w-[180px] md:w-[150px]"
                 />
 
             </div>

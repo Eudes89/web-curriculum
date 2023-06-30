@@ -33,8 +33,8 @@ export default function Projects () {
         <>
         
             <div id="projects" onClick={handleClick}
-            className={classN ? ' animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-auto md:w-auto sm:w-auto 2xl:w-auto xl:w-auto' : 
-            "flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-auto bg-opacity-50 hover:bg-opacity-90 md:w-auto sm:w-auto 2xl:w-auto xl:w-auto"
+            className={classN ? 'w-auto h-auto animate-rubberBand flex flex-col items-center border-2 border-black rounded-lg bg-white bg-opacity-60 text-center lg:w-auto md:w-auto sm:w-auto 2xl:w-auto xl:w-auto' : 
+            "w-auto h-auto hover:cursor-pointer hover:animate-jello hover:ring-2 hover:ring-sky-400 flex flex-col items-center border-2 border-black rounded-lg bg-white text-center lg:w-auto bg-opacity-50 hover:bg-opacity-90 md:w-auto sm:w-auto 2xl:w-auto xl:w-auto"
             }>
 
                 <h3 className='text-lg font-bold
@@ -47,7 +47,7 @@ export default function Projects () {
                     src={iconProject}
                     alt='icone Projeto'
                     width={70}
-                    className='mt-1'
+                    className='mt-1 w-[50px]'
                 />
 
                 <p className='font-bold'>
