@@ -18,7 +18,7 @@ export default function Home() {
         alt="Background Image galaxy"
         className="fixed w-screen h-screen -z-10
         3xl:hidden 2xl:hidden xl:hidden lg:hidden md:hidden"
-
+        priority
       />
       
       <Image 
@@ -31,7 +31,7 @@ export default function Home() {
         xl:flex xl:fixed xl:w-screen xl:h-screen xl:-z-10
         lg:flex lg:fixed lg:w-screen lg:h-screen lg:-z-10 
         md:flex md:fixed md:w-screen md:h-screen md:-z-10"
-
+        priority
       />
 
       <ProfilePhoto>

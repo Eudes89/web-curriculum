@@ -62,9 +62,9 @@ export default function AboutMe () {
 
                 <div id='openInfo'
                 className={closeButton ? 
-                    'animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 2xl:flex 2xl:flex-col 2xl:w-auto 2xl:-left-40 2xl:-right-40 2xl:h-auto 2xl:-top-[480px] xl:flex xl:flex-col xl:w-auto xl:-left-40 xl:-right-40 xl:h-auto xl:-top-70 lg:flex lg:flex-col lg:w-auto lg:-left-40 lg:-right-40 lg:h-auto lg:-top-70 md:flex md:flex-col md:w-auto md:-left-40 md:-right-40 md:h-auto md:-top-70 ' 
+                    'animate-zoomOut absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:flex sm:flex-col sm:px-0 sm:-right-full sm:-left-full sm:-top-[90%]' 
                     :
-                     'animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 2xl:flex 2xl:flex-col 2xl:w-auto 2xl:-left-40 2xl:-right-40 2xl:h-auto 2xl:-top-[480px] xl:flex xl:flex-col xl:w-auto xl:-left-40 xl:-right-40 xl:h-auto xl:-top-70 lg:flex lg:flex-col lg:w-auto lg:-left-40 lg:-right-40 lg:h-auto lg:-top-70 '
+                     'animate-zoomIn absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:flex sm:flex-col sm:px-0 sm:-right-full sm:-left-full sm:-top-full'
                     }
                 >
 
@@ -73,12 +73,11 @@ export default function AboutMe () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2 md:ml-36 lg:ml-52 2xl:ml-0 xl:ml-0'
+                        className='mt-2 sm:mt-8 hover:cursor-pointer'
                     />
 
                     <div id='info' className=' text-center mt-2 mx-1
-                    lg:ml-[18%] lg:mr-[35%] lg:mt-20 md:ml-[18%] md:mr-[18%] md:mt-20
-                    2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4 xl:mt-4'>
+                    '>
                         <p className='text-white mb-4'>
                             
                             É um imenso prazer compartilhar um pouco da minha história com você. 😁

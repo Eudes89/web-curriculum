@@ -16,7 +16,7 @@ export default function Menu (){
             </h3>
 
             <div id="menuBar"
-            className="grid grid-cols-2 grid-rows-2 mx-2
+            className="relative grid grid-cols-2 grid-rows-2 mx-2
             border border-white p-1 gap-1 mt-2 rounded-lg
              animate-flip ring-2 ring-blue-400 bg-blue-800
              bg-opacity-50 py-2 w-auto h-auto shadow-lg shadow-blue-400
