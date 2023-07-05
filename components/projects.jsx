@@ -85,76 +85,34 @@ export default function Projects () {
 
                         <p className='text-white mt-2'>
                             
-                            Durante meus estudos, tive a oportunidade de trabalhar em diversos mini
-                            projetos, nos quais pude testar os frameworks e APIs que estava aprendendo.
-                            No entanto, o projeto mais desafiador foi desenvolvido para uma pequena
-                            empresa de vendas de tintas automotivas.
-                            <br/>
-                            <br/>
-                            Essa empresa gerenciava seu estoque por meio de uma planilha no Excel
-                            e consultava informações sobre vendas e preços dos produtos por meio de 
-                            relatórios em <i className='text-yellow-500'>PDF</i>. Eles precisavam procurar item por item até encontrarem 
-                            o que desejavam. Além disso, tinham que lembrar quais itens estavam com 
-                            baixo estoque para efetuar compras e dependiam exclusivamente dos 
-                            computadores em seu escritório para realizar essas tarefas.
-                            <br/>
-                            <br/>
-                            Quando fui contratado para auxiliá-los com suas tintas, propus o 
-                            desenvolvimento de um web/app que automatizasse ou simplificasse todas 
-                            essas tarefas.
-                            <br/>
-                            <br/>
-                            Iniciei o desenvolvimento do site/app e me deparei com vários desafios. 
-                            Um deles foi criar um recurso de upload de notas fiscais em PDF, extrair 
-                            as informações relevantes e salvá-las em um banco de dados. Dediquei 
-                            bastante tempo estudando as APIs <i className='text-green-500'>PDF-READER</i> e <i className='text-blue-500'>BUSBOY</i>, e em seguida, mais 
-                            tempo para adaptar essas tecnologias às notas fiscais de cada fornecedor.
-                            <br/>
-                            <br/>
-                            Finalmente, consegui integrar o app a um site responsivo, permitindo que 
-                            eles acessassem o estoque por meio de seus celulares ou de qualquer lugar, 
-                            utilizando um sistema de login e senha com proteção <i className='text-red-500'>JWT</i> e criptografia de
-                            senha armazenada no banco de dados <i className='text-sky-500'>POSTGRESQL</i>.
-                            <br/>
-                            <br/>
-                            Enfrentei outro desafio ao tentar desenvolver um mecanismo de busca por
-                            palavras que aceitasse abreviações e considerasse outros aspectos. 
-                            No entanto, consegui criar meu próprio <i className='text-zinc-400'>motor de busca</i> usando
-                            apenas <i className='text-orange-500'>JAVASCRIPT</i>.
-                            <br/>
-                            Hoje, o aplicativo está na fase final de desenvolvimento. Ele possui recursos avançados que permitem a 
-                            atualização automática do estoque por meio do upload de notas fiscais de vendas e compras de produtos. 
-                            Além disso, é capaz de pesquisar produtos pelo nome, mesmo que haja abreviações, fornecer informações 
-                            sobre a quantidade em estoque, detalhes da última venda, incluindo preço, data, cliente e outras 
-                            informações úteis.
-                            <br/>
-                            <br/>
-                            No momento, estou trabalhando em um recurso de alerta para quando o estoque estiver baixo, o aplicativo
-                            enviará automaticamente um e-mail para o setor de compras, listando os itens necessários. Também estou 
-                            desenvolvendo uma forma de atualizar facilmente os valores de aumento nos preços de compra, o que afetará 
-                            os preços de venda. Isso ajudará o setor de vendas a manter os preços atualizados de forma eficiente.
-                            <br/>
-                            <br/>
-                            Por fim, estou planejando adicionar mais dados à seção do site destinada aos clientes. Eles poderão 
-                            visualizar os produtos oferecidos de forma detalhada, incluindo técnicas de aplicação. Essa melhoria 
-                            proporcionará uma experiência mais completa e informativa para os clientes.
-                            <br/>
-                            <br/>
-                            Atualmente, estou finalizando esse projeto e pretendo em 
-                            breve disponibilizá-lo como código aberto no meu <i className='text-emerald-500'>GitHub</i>.
-                            <br/>
-                            <br/>
-                            Para isso, preciso concluir alguns detalhes e, em seguida, criar notas 
-                            fiscais fictícias para testes, a fim de preservar os dados pessoais da 
-                            empresa. Espero finalizar tudo em breve para poder apresentar uma versão 
-                            mais refinada da aplicação para aqueles que estiverem interessados em me 
-                            contratar para trabalhar com desenvolvimento web, que é, aliás, meu grande 
-                            sonho.
-                            <br/>
-                            <br/>
-                            Para fins de demonstração, estou disponível para apresentar pessoalmente 
-                            esse projeto e discutir detalhes com aqueles que estiverem interessados 
-                            em contratar meus serviços.
+                        - Desenvolvi um projeto desafiador para uma empresa de vendas de tintas automotivas, automatizando tarefas de gerenciamento de estoque e consulta de informações.
+                        <br/>
+                        <br/>
+                        - Criei um aplicativo web responsivo, integrado a um site, que permite acesso ao estoque e funcionalidades avançadas através de dispositivos móveis.
+                        <br/>
+                        <br/>
+                        - Implementei recursos como upload de notas fiscais em PDF, extração de informações relevantes e armazenamento em banco de dados.
+                        <br/>
+                        <br/>
+                        - Desenvolvi um mecanismo de busca eficiente que aceita abreviações e considera diferentes aspectos.
+                        <br/>
+                        <br/>
+                        - O aplicativo está na fase final de desenvolvimento, com recursos avançados como atualização automática do estoque, pesquisa de produtos, detalhes de vendas e alertas de estoque baixo.
+                        <br/>
+                        <br/>
+                        - Estou trabalhando em recursos adicionais, como alertas por e-mail para o setor de compras e atualização fácil de preços de compra.
+                        <br/>
+                        <br/>
+                        - Planejo adicionar mais informações detalhadas para os clientes, proporcionando uma experiência completa e informativa.
+                        <br/>
+                        <br/>
+                        - O projeto será disponibilizado como código aberto no GitHub em breve.
+                        <br/>
+                        <br/>
+                        - Estou disponível para apresentar pessoalmente o projeto e discutir detalhes com potenciais contratantes interessados em me contratar para trabalhar com desenvolvimento web.
+                        <br/>
+                        <br/>
+                        - Sou apaixonado por programação e estou em busca de oportunidades desafiadoras para contribuir com projetos e demonstrar minha habilidade e dedicação.
 
 
                         </p>

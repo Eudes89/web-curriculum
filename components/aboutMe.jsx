@@ -80,59 +80,50 @@ export default function AboutMe () {
                     <div id='info' className=' text-center mt-2 mx-1
                     '>
                         <p className='text-white mb-4'>
-                            
-                            É um imenso prazer compartilhar um pouco da minha história com você. 😁
+
+                            <b className=' text-yellow-500'>Informações pessoais:</b>
+                            <br/>
+                            <p className='flex justify-center text-left'>
+                            - Nome: Eudes Azevedo dos Santos Filho
+                            <br/>
+                            - Data de nascimento: 10 de janeiro de 1989
+
+                            </p>
+                            <br/>
+                            <b className=' text-yellow-500'>Resumo profissional:</b>
+                            <br/>
+                            Sou um desenvolvedor autodidata apaixonado por programação, com foco em frontend e backend. 
+                            Iniciei meus estudos em 2019, concentrando-me inicialmente na linguagem JavaScript. 
+                            Desde então, tenho adquirido conhecimentos em HTML, CSS e explorei ferramentas como React, 
+                            Next.js, Node.js, Express, Tailwind CSS e GitHub. Atualmente, estou me dedicando ao estudo de 
+                            TypeScript e tenho planos de aprender GraphQL, Electron e ElasticSearch no futuro.
                             <br/>
                             <br/>
-                            Nasci na cidade de Guararema, em São Paulo, e aos 9 anos de idade
-                            mudei-me para Mogi das Cruzes, também em São Paulo. Foi nessa época
-                            que tive meu primeiro contato com um computador.
-                            Era uma máquina que possuía apenas um prompt de comando, exigindo 
-                            que eu entendesse um pouco de códigos do terminal para abrir qualquer
-                            aplicativo. Por sorte, veio acompanhada de um manual que ensinava
-                            vários comandos.
+                            <b className=' text-yellow-500'>Objetivo profissional:</b>
+                            <br/>
+                            Busco oportunidades para contribuir com projetos desafiadores e colaborar com uma equipe de 
+                            trabalho, utilizando meu conhecimento em programação. 
+                            Tenho paixão por automatizar processos e sou altamente persistente, dedicando-me até a 
+                            conclusão de cada tarefa que assumo.
                             <br/>
                             <br/>
-                            Desde então, apaixonei-me pela área da computação. Infelizmente, 
-                            devido às dificuldades financeiras de minha família, precisei começar
-                            a trabalhar cedo, o que me afastou gradativamente da tecnologia. &#9785;
+                            <b className=' text-yellow-500'>Habilidades técnicas:</b>
                             <br/>
+                            <p className='flex justify-center text-left'>
+                            - Linguagens de programação: JavaScript, HTML, CSS<br/>
+                            - Frameworks e bibliotecas: React, Next.js<br/>
+                            - Ferramentas: Node.js, Express, Tailwind CSS, GitHub<br/>
+                            - Conhecimentos em progresso: TypeScript<br/>
+                            - Futuros aprendizados planejados: GraphQL, Electron, ElasticSearch<br/>
+                            </p>
                             <br/>
-                            Trabalhei como empacotador de supermercado e posteriormente na área
-                            de blindagem automotiva junto ao meu pai. Em seguida, ingressei em
-                            uma loja de troca de óleo e mais tarde decidi abrir minha própria
-                            oficina de funilaria e pintura de carros. Entretanto, acabei encerrando
-                            esse empreendimento para abrir um bar no centro da cidade,
-                            até que, posteriormente, decidi deixar o bar sob a administração de meu pai.
+                            <b className=' text-yellow-500'>Considerações finais:</b>
                             <br/>
-                            <br/>
-                            Foi somente no final de 2019 que retomei meus estudos em programação e
-                            me reconectei com o mundo da tecnologia, despertando minha verdadeira paixão.
-                            Sempre fui fascinado por tudo relacionado à tecnologia, computadores e
-                            videogames, e a possibilidade de desenvolver programas e vê-los sendo
-                            utilizados pelas pessoas é algo realmente fantástico. 💻
-                            <br/>
-                            <br/>
-                            Quando me comprometo com algo, vou até o fim, mesmo que exija muito esforço.
-                            Meus amigos costumam dizer:<br/>
-                            <i className=' text-yellow-500'>&#10075; Quando o Eudes pega um problema, ele não desiste
-                            até resolvê-lo! &#10076;</i> 
-                            <br/>
-                            <br/>
-                            Tudo o que aprendi até hoje foi de forma autodidata, buscando
-                            conteúdo e soluções para criar aplicações web e mobile reais, o que relato 
-                            um pouco mais na seção de projetos.
-                            <br/>
-                            <br/>
-                            Continuo estudando diariamente, explorando novas APIs e frameworks.
-                            Acompanho de perto o site RoadMap, que serve como base para meus estudos.
-                            Meu objetivo é continuar evoluindo para poder contribuir da melhor forma
-                            possível com meu futuro empregador.
-                            <br/>
-                            <br/>
-                            Não almejo ser o melhor, mas sim ser habilidoso no que faço e 
-                            alcançar plena satisfação em meus trabalhos e conhecimentos.
-                            Este é o meu sonho.
+                            Estou comprometido em me manter atualizado sobre as últimas tendências e tecnologias 
+                            relacionadas ao desenvolvimento de software. Busco constantemente expandir meus 
+                            conhecimentos e habilidades para atingir o melhor desempenho profissional possível e 
+                            contribuir de forma significativa com meus colegas de equipe e empregadores. 
+                            Estou entusiasmado em enfrentar novos desafios e fazer parte de projetos inovadores.
                         
                         </p>
                     </div>
