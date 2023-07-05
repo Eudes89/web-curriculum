@@ -62,9 +62,9 @@ export default function AboutMe () {
 
                 <div id='openInfo'
                 className={closeButton ? 
-                    'animate-zoomOut absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:flex sm:flex-col sm:px-0 sm:-right-full sm:-left-full sm:-top-[90%]' 
+                    'animate-zoomOut absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]' 
                     :
-                     'animate-zoomIn absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:flex sm:flex-col sm:px-0 sm:-right-full sm:-left-full sm:-top-full'
+                     'animate-zoomIn absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]'
                     }
                 >
 
@@ -73,7 +73,8 @@ export default function AboutMe () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2 sm:mt-8 hover:cursor-pointer'
+                        className='mt-2 hover:cursor-pointer
+                        '
                     />
 
                     <div id='info' className=' text-center mt-2 mx-1

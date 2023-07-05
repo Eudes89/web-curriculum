@@ -59,8 +59,11 @@ export default function Projects () {
             {open && 
 
                 <div id='openInfo'
-                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%]' :
-                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-auto -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10'}
+                className={closeButton ? 
+                    'animate-zoomOut absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]' 
+                    :
+                     'animate-zoomIn absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]'
+                    }
                 >
 
                     <Image 
@@ -68,16 +71,16 @@ export default function Projects () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2 md:ml-36 lg:ml-52 2xl:ml-0 xl:ml-0'
+                        className='mt-2 sm:mt-8 hover:cursor-pointer'
                     />
 
                     <div id='info' className=' text-center mt-2 mx-1
-                    lg:ml-[18%] lg:mr-[35%] lg:mt-20 md:ml-[18%] md:mr-[18%] md:mt-20
-                    2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4'>
+                    
+                    2xl:mr-4 2xl:ml-4 2xl:-mt-0 xl:mr-4 xl:ml-4'>
                         
                         <h3 className='font-bold text-xl text-blue-600
                         bg-white py-2'>
-                            Meu Projeto
+                            Meus Projetos
                         </h3>
 
                         <p className='text-white mt-2'>
@@ -117,7 +120,27 @@ export default function Projects () {
                             Enfrentei outro desafio ao tentar desenvolver um mecanismo de busca por
                             palavras que aceitasse abreviações e considerasse outros aspectos. 
                             No entanto, consegui criar meu próprio <i className='text-zinc-400'>motor de busca</i> usando
-                            apenas <i className='text-orange-500'>JAVASCRIPT</i>. Atualmente, estou finalizando esse projeto e pretendo em 
+                            apenas <i className='text-orange-500'>JAVASCRIPT</i>.
+                            <br/>
+                            Hoje, o aplicativo está na fase final de desenvolvimento. Ele possui recursos avançados que permitem a 
+                            atualização automática do estoque por meio do upload de notas fiscais de vendas e compras de produtos. 
+                            Além disso, é capaz de pesquisar produtos pelo nome, mesmo que haja abreviações, fornecer informações 
+                            sobre a quantidade em estoque, detalhes da última venda, incluindo preço, data, cliente e outras 
+                            informações úteis.
+                            <br/>
+                            <br/>
+                            No momento, estou trabalhando em um recurso de alerta para quando o estoque estiver baixo, o aplicativo
+                            enviará automaticamente um e-mail para o setor de compras, listando os itens necessários. Também estou 
+                            desenvolvendo uma forma de atualizar facilmente os valores de aumento nos preços de compra, o que afetará 
+                            os preços de venda. Isso ajudará o setor de vendas a manter os preços atualizados de forma eficiente.
+                            <br/>
+                            <br/>
+                            Por fim, estou planejando adicionar mais dados à seção do site destinada aos clientes. Eles poderão 
+                            visualizar os produtos oferecidos de forma detalhada, incluindo técnicas de aplicação. Essa melhoria 
+                            proporcionará uma experiência mais completa e informativa para os clientes.
+                            <br/>
+                            <br/>
+                            Atualmente, estou finalizando esse projeto e pretendo em 
                             breve disponibilizá-lo como código aberto no meu <i className='text-emerald-500'>GitHub</i>.
                             <br/>
                             <br/>

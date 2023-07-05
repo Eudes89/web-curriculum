@@ -10,6 +10,10 @@ import Link from 'next/link';
 import sequelizeLogo from '../public/images/sequelize-logo.png';
 import eslintLogo from '../public/images/eslint-logo.png';
 import nodelogo from '../public/images/node-logo.png';
+import tipescriptLogo from '../public/images/typescript.png';
+import elasticSearch from '../public/images/Elasticsearch_logo.png';
+import electronLogo from '../public/images/electronjs.png';
+import graphQl from '../public/images/graphql.png';
 
 export default function Knowledge () {
 
@@ -67,8 +71,11 @@ export default function Knowledge () {
             {open && 
 
                 <div id='openInfo'
-                className={closeButton ? ' animate-zoomOut absolute bg-white bg-opacity-90 w-screen h-auto -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%]' :
-                     ' animate-zoomIn absolute bg-white bg-opacity-90 w-screen h-auto -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10'}
+                className={closeButton ? 
+                    'animate-zoomOut absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-white bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]' 
+                    :
+                     'animate-zoomIn absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-white bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]'
+                    }
                 >
 
                     <Image 
@@ -76,12 +83,14 @@ export default function Knowledge () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2 md:ml-36 lg:ml-52 2xl:ml-0 xl:ml-0'
+                        className='mt-2 hover:cursor-pointer
+                        '
                     />
 
                     <div id='info' className=' text-center mt-2 mx-1
-                    lg:ml-[18%] lg:mr-[35%] lg:mt-20 md:ml-[18%] md:mr-[18%] md:mt-20
-                    2xl:mr-4 2xl:ml-4 xl:mr-4 xl:ml-4'>
+                     md:ml-[18%] md:mr-[18%] md:mt-20
+                    2xl:mr-4 2xl:ml-4 2xl:-mt-0 xl:mr-4 xl:ml-4 xl:-mt-0
+                    lg:-mt-0'>
                         
                         <h2 className='text-white text-xl font-bold
                         bg-black w-full mb-2'>
@@ -202,9 +211,81 @@ export default function Knowledge () {
                         </div>
 
                         <p className='my-4 font-bold text-xl text-center
-                        2xl:text-white 3xl:text-white'>
+                        '>
                             Entre outras...
                         </p>
+
+                        <h2 className='text-white text-xl font-bold
+                        bg-black w-full mb-2'>
+
+                            Tecnologias que Estou Estudando.
+
+                        </h2>
+
+                        <div id='info2' className=' text-center mt-2 mx-1
+
+                        2xl:mr-4 2xl:ml-4 2xl:-mt-0 xl:mr-4 xl:ml-4 xl:-mt-0
+                        lg:-mt-0 flex justify-center'>
+
+                            <Link href="https://www.typescriptlang.org/">
+
+                                <Image 
+                                    src={tipescriptLogo}
+                                    alt='TypeScript Logotipo'
+                                    width={80}
+                                    className='mb-2'
+                                />
+
+                            </Link>
+
+                        </div>
+
+                        <h2 className='text-white text-xl font-bold
+                        bg-black w-full mb-2'>
+
+                            Tecnologias que quero Estudar.
+
+                        </h2>
+
+                        <div id='info3' className=' text-center mt-2 mx-1
+                        
+                        2xl:mr-4 2xl:ml-4 2xl:-mt-0 xl:mr-4 xl:ml-4 xl:-mt-0
+                        lg:-mt-0 md:mt-0 flex justify-center items-center gap-x-2'>
+
+                            <Link href="https://www.elastic.co/pt/">
+
+                                <Image 
+                                    src={elasticSearch}
+                                    alt='elasticSearch Logotipo'
+                                    width={200}
+                                    className=''
+                                />
+
+                            </Link>
+
+                            <Link href="https://www.electronjs.org/">
+
+                                <Image 
+                                    src={electronLogo}
+                                    alt='electron Logotipo'
+                                    width={150}
+                                    className=''
+                                />
+
+                            </Link>
+
+                            <Link href="https://graphql.org/">
+
+                                <Image 
+                                    src={graphQl}
+                                    alt='GraphQl Logotipo'
+                                    width={170}
+                                    className=''
+                                />
+
+                            </Link>
+
+                        </div>
 
                     </div>
 

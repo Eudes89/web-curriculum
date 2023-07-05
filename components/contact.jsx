@@ -62,8 +62,11 @@ export default function Contact () {
             {open && 
 
                 <div id='openInfo'
-                className={closeButton ? ' animate-zoomOut absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%]' :
-                     ' animate-zoomIn absolute bg-black bg-opacity-90 w-screen h-screen -top-[95%] -left-6 lg:w-[1600px] lg:-left-[77%] lg:min-h-[750px] md:w-[980px] md:min-h-[750px] md:-left-[43%] sm:w-[600px] sm:min-h-[800px] sm:-left-[20%] xl:w-auto 2xl:min-h-auto 2xl:h-auto 2xl:-top-32 2xl:-left-10 2xl:-right-10 2xl:w-auto 2xl:min-h-auto xl:h-auto xl:-top-70 xl:-left-10 xl:-right-10'}
+                className={closeButton ? 
+                    'animate-zoomOut absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]' 
+                    :
+                     'animate-zoomIn absolute z-10 -top-[110%] -left-1/2 -right-1/2 px-[50%] bg-black bg-opacity-90 h-screen sm:-top-56 md:-left-full md:-right-full md:-top-56 lg:-top-[90%] xl:-left-[150%] xl:-right-[150%] xl:-top-[90%] 2xl:-top-[130%]'
+                    }
                 >
 
                     <Image 
@@ -71,7 +74,7 @@ export default function Contact () {
                         alt='Icone close'
                         width={40}
                         onClick={handleClose}
-                        className='mt-2 md:ml-36 lg:ml-52 2xl:ml-0 xl:ml-0'
+                        className='mt-2 sm:mt-8 hover:cursor-pointer'
                     />
 
                     <h3 className='font-bold text-xl bg-slate-900
@@ -88,21 +91,20 @@ export default function Contact () {
                             Meu WhatsApp Pessoal
                         </h4>
 
-                        <div className='flex items-center py-2'>
-
+                        <Link href='https://api.whatsapp.com/send?phone=5511971767478&text=Ol%C3%A1.%20Vi%20o%20seu%20web%20curriculum%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.'
+                        className='flex items-center py-2'>
                             <Image 
                                 src={iconWhatsApp}
                                 alt='Icone whatsapp'
                                 width={50}
                                 className=' animate-pulse animate-infinite'
                             />
-
                             <p className=' ml-4 font-bold
                             text-lg text-green-500 animate-pulse animate-infinite'>
                                 11-97176-7478
                             </p>
-
-                        </div>
+                        </Link>
+                        
                     </div>
 
                     <div id='email' className='flex flex-col text-center
@@ -113,7 +115,7 @@ export default function Contact () {
                             Meu Email Pessoal
                         </h4>
 
-                        <div className='flex items-center py-2'>
+                        <Link className='flex items-center py-2' href='mailto:eudesmith@gmail.com?subject=Vi seu Web Curriculum&body=Olá vi seu web Curriculum e gostaria de mais informações.'>
 
                             <Image 
                                 src={iconGmail}
@@ -127,7 +129,7 @@ export default function Contact () {
                                 eudesmith@gmail.com
                             </p>
 
-                        </div>
+                        </Link>
                     </div>
 
                     <div id='git' className='flex flex-col text-center
