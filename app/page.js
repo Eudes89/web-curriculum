@@ -18,7 +18,7 @@ export default function Home() {
     overscroll-x-none overflow-x-hidden ">
 
       {loading &&
-        <div className="h-screen mt-[50%]"> 
+        <div className="h-screen mt-[50%] 2xl:mt-[25%] xl:mt-[25%] lg:mt-[25%] md:mt-[25%]"> 
           <p className="font-bold text-xl text-white animate-twPulse
           animate-infinite bg-black p-8 rounded-full">
               CARREGANDO...
