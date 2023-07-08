@@ -18,7 +18,7 @@ export default function Home() {
     overscroll-x-none overflow-x-hidden ">
 
       {loading &&
-        <div className="h-screen mt-[100%]"> 
+        <div className="h-screen mt-[50%]"> 
           <p className="font-bold text-xl text-white animate-twPulse
           animate-infinite bg-black p-8 rounded-full">
               CARREGANDO...
@@ -56,7 +56,7 @@ export default function Home() {
         }}
         placeholder="blur"
       />
-      
+
       {showPage && 
         <ProfilePhoto>
           <Menu />
