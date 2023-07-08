@@ -1,5 +1,9 @@
 'use client'
 import { useState } from "react";
+import Link from "next/link";
+import instagram from '../public/images/instagram.png';
+import linkedin from '../public/images/linkedin.png';
+import Image from "next/image";
 
 export default function Footer(){
     const [show, setShow] = useState(false);
@@ -16,6 +20,37 @@ export default function Footer(){
         <div id="footer"
         className=" bg-black text-white w-auto h-auto
         text-center bg-opacity-50 hover:cursor-pointer">
+
+            <div id="redes_sociais">
+
+                <h3>
+                    Redes Sociais
+                </h3>
+
+                <div className="flex gap-x-4 justify-center my-1">
+                    
+                    <Link href='https://www.instagram.com/eudesazevedo89/'>
+                        <Image
+                           src={instagram}
+                           alt="Logo Instagram"
+                           width={40}
+                           className="hover:shadow-md hover:shadow-white
+                            bg-white rounded-xl" 
+                        />
+                    </Link>
+
+                    <Link href=''>
+                        <Image
+                           src={linkedin}
+                           alt="Logo linkedin"
+                           width={40}
+                           className="hover:shadow-md hover:shadow-white
+                            bg-white rounded-xl" 
+                        />
+                    </Link>
+
+                </div>
+            </div>
 
             <div id="atribuições" onClick={showAssignment}
             className="flex flex-col">

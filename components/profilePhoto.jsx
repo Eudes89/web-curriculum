@@ -15,9 +15,6 @@ export default function ProfilePhoto ({children}) {
         setClassName(true);
         setClick(true);
         setHiddenWrite(false);
-        setTimeout(() => {
-            setClassName(false);
-        }, 1000);
         
         
     }
@@ -30,7 +27,7 @@ export default function ProfilePhoto ({children}) {
             className= {classname ? 
             'mt-16 animate-flip 2xl:mt-36 xl:mt-2 lg:mt-2 md:mt-2 sm:mt-2'
             : 
-            'mt-16 2xl:mt-36 xl:mt-2 lg:mt-8 md:mt-4 sm:mt-1'}>
+            'mt-16 2xl:mt-36 xl:mt-2 lg:mt-8 md:mt-4 sm:mt-1 animate-zoomIn'}>
 
                 <Image
                  src={profilePhoto}

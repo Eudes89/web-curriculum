@@ -2,7 +2,6 @@ import { useState } from "react"
 
 export default function Typewriter (){
 
-    const [wait, setwait] = useState(true);
     const [first, setFirst] = useState(false);
     const [second, setSecond] = useState(false);
     const [third, setThird] = useState(false);
@@ -10,10 +9,6 @@ export default function Typewriter (){
     const [fifth, setFifth] = useState(false);
 
     function writer (){
-
-        setTimeout(() => {
-            setwait(false);
-        },1000)
         
         setTimeout(() => {
             setFirst(true);
@@ -43,20 +38,13 @@ export default function Typewriter (){
     return(
         <div className="flex flex-col items-center gap-y-1 mt-2
         ">
-            {first ? 
+            {first && 
             <p 
             className="text-white text-lg font-bold animate-backInLeft
             border border-white rounded-r-xl rounded-b-xl p-2 bg-black
             bg-opacity-60">
                 Olá, eu me chamo Eudes Azevedo.
             </p>
-
-            :
-
-            <p className="font-bold text-xl text-white mt-10 animate-twPulse
-            animate-infinite bg-black p-8 rounded-full">
-                CARREGANDO...
-            </p> 
             } 
 
             {second && 

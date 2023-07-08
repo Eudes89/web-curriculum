@@ -1,28 +1,46 @@
+'use client'
 
 import ProfilePhoto from "@/components/profilePhoto";
 import Image from "next/image";
 import Menu from "@/components/menu";
 import bgMobile from '../public/images/bg-mobile-image.jpg';
 import bgPc from '../public/images/bg-pc-image.jpg';
+import { useState } from "react";
 
 export default function Home() {
   
+  const [loading, setLoading] = useState(true);
+  const [showPage, setShowPage] = useState(false);
+
   return (
     
     <main className="flex flex-col items-center h-screen
     overscroll-x-none overflow-x-hidden ">
 
-      <Image 
+      {loading &&
+        <div className="h-screen mt-[100%]"> 
+          <p className="font-bold text-xl text-white animate-twPulse
+          animate-infinite bg-black p-8 rounded-full">
+              CARREGANDO...
+          </p> 
+        </div>
+      }
+
       
+      <Image 
         src={bgMobile}
         alt="Background Image galaxy"
         className="fixed w-screen h-screen -z-10
         3xl:hidden 2xl:hidden xl:hidden lg:hidden md:hidden"
-        priority
+        priority={true}
+        onLoadingComplete={() => {
+          setLoading(false);
+          setShowPage(true);
+        }}
+        placeholder="blur"
       />
       
       <Image 
-      
         src={bgPc}
         alt="Background Image galaxy"
         className="hidden
@@ -31,14 +49,19 @@ export default function Home() {
         xl:flex xl:fixed xl:w-screen xl:h-screen xl:-z-10
         lg:flex lg:fixed lg:w-screen lg:h-screen lg:-z-10 
         md:flex md:fixed md:w-screen md:h-screen md:-z-10"
-        priority
+        priority={true}
+        onLoadingComplete={() => {
+          setLoading(false);
+          setShowPage(true);
+        }}
+        placeholder="blur"
       />
-
-      <ProfilePhoto>
-
-        <Menu />
-        
-      </ProfilePhoto>
+      
+      {showPage && 
+        <ProfilePhoto>
+          <Menu />
+        </ProfilePhoto>
+      }
 
     </main>
   )
