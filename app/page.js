@@ -33,11 +33,11 @@ export default function Home() {
         className="fixed w-screen h-screen -z-10
         3xl:hidden 2xl:hidden xl:hidden lg:hidden md:hidden"
         priority={true}
+        placeholder="blur"
         onLoadingComplete={() => {
           setLoading(false);
           setShowPage(true);
         }}
-        placeholder="blur"
       />
       
       <Image 
@@ -50,11 +50,11 @@ export default function Home() {
         lg:flex lg:fixed lg:w-screen lg:h-screen lg:-z-10 
         md:flex md:fixed md:w-screen md:h-screen md:-z-10"
         priority={true}
+        placeholder="blur"
         onLoadingComplete={() => {
           setLoading(false);
           setShowPage(true);
         }}
-        placeholder="blur"
       />
 
       {showPage && 
