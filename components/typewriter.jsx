@@ -1,80 +1,43 @@
-import { useState } from "react"
+'use client'
+import { useState, useEffect } from "react"
 
 export default function Typewriter (){
 
-    const [first, setFirst] = useState(false);
-    const [second, setSecond] = useState(false);
-    const [third, setThird] = useState(false);
-    const [fourth, setFourth] = useState(false);
-    const [fifth, setFifth] = useState(false);
+    const [text1, setText1] = useState('');
 
-    function writer (){
-        
-        setTimeout(() => {
-            setFirst(true);
-        }, 1000)
-        
-        setTimeout(() => {
-            setSecond(true)
-        },2000)
+    const firstText = 'Ollá, meu nome é Eudes Azevedo. ' + 
+    'É um prazer conhecê-lo(a)! ' +
+    'Clique ou Toque em minha foto para saber mais sobre mim.'
+    
+    useEffect(() => {
+        let currentIndex = 0;
 
-        setTimeout(() => {
-            setThird(true)
-        },3000)
+        const addNextLetter = () => {
+            setText1((prevText) => prevText + firstText[currentIndex]);
+            currentIndex++;
 
-        setTimeout(() => {
-            setFourth(true)
-        },4000)
+            if(currentIndex < firstText.length - 1){
+                setTimeout(addNextLetter, 50);
+            }
+        };
 
-        setTimeout(() => {
-            setFifth(true)
-        },5000)
-    }
+        setTimeout(addNextLetter, 50);
 
+        return () => clearTimeout();
 
-    writer()
+    }, [firstText]);
 
 
     return(
-        <div className="flex flex-col items-center gap-y-1 mt-2
-        ">
-            {first && 
-            <p 
-            className="text-white text-lg font-bold animate-backInLeft
-            border border-white rounded-r-xl rounded-b-xl p-2 bg-black
-            bg-opacity-60">
-                Olá, eu me chamo Eudes Azevedo.
+        <div className="flex flex-col items-center gap-y-2 mt-4
+        text-center bg-black bg-opacity-80 rounded-lg mx-2 my-2
+        w-[350px] h-[150px] ring-2 ring-zinc-500 shadow-md shadow-white
+         animate-zoomIn"> 
+
+            <p className="text-green-400 text-lg font-bold px-8 py-4">
+                {text1}
             </p>
-            } 
-
-            {second && 
-                <p className="text-white text-lg font-bold animate-backInLeft
-                border border-white rounded-r-xl rounded-b-xl p-2 bg-black bg-opacity-60">
-                    É um prazer conhecê-lo (a).
-                </p>
-            }
-
-            {third && 
-                <p className="text-white text-lg font-bold animate-backInLeft
-                border border-white rounded-r-xl rounded-b-xl p-2 bg-black bg-opacity-60">
-                    Este é meu web curriculum vitae.
-                </p>
-            }
-
-            {fourth && 
-                <p className="text-white text-lg font-bold animate-backInLeft
-                border border-white rounded-r-xl rounded-b-xl p-2 bg-black bg-opacity-60">
-                    Clique / toque em minha foto
-                </p>
-            }
-
-            {fifth && 
-                <p className="text-white text-lg font-bold animate-backInLeft
-                border border-white rounded-r-xl rounded-b-xl p-2 bg-black bg-opacity-60">
-                    para ver o Menu.
-                </p>
-            }
-
+           
         </div>
     )
 }
