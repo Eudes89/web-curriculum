@@ -39,7 +39,7 @@ export default function Footer(){
                         />
                     </Link>
 
-                    <Link href=''>
+                    <Link href='https://linkedin.com/in/eudes-azevedo-6a8056283'>
                         <Image
                            src={linkedin}
                            alt="Logo linkedin"
