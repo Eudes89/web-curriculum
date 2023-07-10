@@ -3,8 +3,8 @@
 import ProfilePhoto from "@/components/profilePhoto";
 import Image from "next/image";
 import Menu from "@/components/menu";
-import bgMobile from '../public/images/bg-mobile-image.jpg';
-import bgPc from '../public/images/bg-pc-image.jpg';
+import bgMobile from '../public/images/bg-mobile-2.jpg';
+import bgPc from '../public/images/bg-pc-2.jpg';
 import { useState } from "react";
 
 export default function Home() {

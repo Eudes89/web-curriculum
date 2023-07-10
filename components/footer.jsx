@@ -19,7 +19,7 @@ export default function Footer(){
     return(
         <div id="footer"
         className=" bg-black text-white w-auto h-auto
-        text-center bg-opacity-50 hover:cursor-pointer">
+        text-center bg-opacity-50">
 
             <div id="redes_sociais">
 
@@ -52,10 +52,11 @@ export default function Footer(){
                 </div>
             </div>
 
-            <div id="atribuições" onClick={showAssignment}
+            <div id="atribuições"
             className="flex flex-col">
                 
-                <h4 className="text-lg text-blue-400">
+                <h4 className="text-lg text-blue-400 hover:cursor-pointer"
+                onClick={showAssignment}>
                     Atribuições de imagens dos Ícones
                 </h4>
 
