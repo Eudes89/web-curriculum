@@ -10,7 +10,15 @@ import { useState } from "react";
 export default function Home() {
   
   const [loading, setLoading] = useState(true);
+  const [endLoading, setEndLoading] = useState(false);
   const [showPage, setShowPage] = useState(false);
+
+  function showProfile (){
+    setTimeout(() => {
+      setEndLoading(false);
+      setShowPage(true);
+    }, 2000);
+  }
 
   return (
     
@@ -36,7 +44,10 @@ export default function Home() {
         placeholder="blur"
         onLoadingComplete={() => {
           setLoading(false);
-          setShowPage(true);
+          setEndLoading(true);
+          
+          showProfile();
+
         }}
       />
       
@@ -53,9 +64,23 @@ export default function Home() {
         placeholder="blur"
         onLoadingComplete={() => {
           setLoading(false);
-          setShowPage(true);
+          setEndLoading(true);
+          
+          showProfile();
+
         }}
       />
+
+      {endLoading && 
+        <p className="font-bold text-xl text-white 
+        bg-black p-6 rounded-full text-center
+        mt-[50%] 2xl:mt-[20%] xl:mt-[20%] lg:mt-[20%] md:mt-[25%]
+         animate-twPulse animate-repeat-3">
+          Carregamento concluido.
+          <br/>
+          Obrigado por aguardar!
+        </p>
+      }
 
       {showPage && 
         <ProfilePhoto>
